@@ -59,7 +59,7 @@ on run {input, parameters}
 				set the targetFileHFSPath to (defaultDestinationFolder as string) & newExportItemName
 				-- EXPORT THE DOCUMENT
 				with timeout of 1200 seconds
-					export front document to file targetFileHFSPath as Microsoft PowerPoint with properties {borders:true}
+					export front document to file targetFileHFSPath as Microsoft PowerPoint
 				end timeout
 				
 				close front document without saving
