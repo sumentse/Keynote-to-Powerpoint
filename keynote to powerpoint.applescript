@@ -13,7 +13,7 @@ on run {input, parameters}
 	end repeat
 
 	set pathList to (item 1 of pathList as string) & "/"
-	set tempFolder to POSIX path of pathList & "Converted PDFs"
+	set tempFolder to POSIX path of pathList & "PPTX"
 	
 	--create folder to store powerpoint if folder does not exist
 	if not fileExists(tempFolder) then
